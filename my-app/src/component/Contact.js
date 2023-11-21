@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Contact() {
   return (
@@ -7,7 +8,7 @@ function Contact() {
         <div className="row px-xl-5">
           <div className="col-12">
             <nav className="breadcrumb bg-light mb-30">
-              <a className="breadcrumb-item text-dark" href="/">Home</a>
+              <Link className="breadcrumb-item text-dark" to="/">Home</Link>
               <span className="breadcrumb-item active">Contact</span>
             </nav>
           </div>
@@ -33,7 +34,7 @@ function Contact() {
                 </div>
                 <div className="control-group">
                   <input type="text" className="form-control" id="subject" placeholder="Subject"
-                    required="required" data-validation-required-message="Please enter a subject" />
+                    required="required" data-validation-required-message="Please enter Link subject" />
                   <p className="help-block text-danger"></p>
                 </div>
                 <div className="control-group">

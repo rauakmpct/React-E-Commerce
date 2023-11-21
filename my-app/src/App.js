@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter,Route, Routes } from 'react-router-dom'
+import {Route, Routes } from 'react-router-dom'
 import Home from './component/Home'
 import Header from './component/layoutes/Header'
 import Footer from './component/layoutes/Footer'
@@ -13,8 +13,7 @@ import Checkout from './component/Checkout'
 function App() {
   return (
     <>
-      <Header />
-      <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/shop" element={<Shop/>} />
@@ -24,8 +23,7 @@ function App() {
         <Route path="/checkout" element={<Checkout/>} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      </BrowserRouter>
-      <Footer />
+      <Footer/>
 
     </>
 

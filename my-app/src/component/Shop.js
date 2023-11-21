@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Shop() {
   return (
@@ -8,8 +9,8 @@ function Shop() {
         <div className="row px-xl-5">
           <div className="col-12">
             <nav className="breadcrumb bg-light mb-30">
-              <a className="breadcrumb-item text-dark" href="/">Home</a>
-              <a className="breadcrumb-item text-dark" href="/">Shop</a>
+              <Link className="breadcrumb-item text-dark" to="/">Home</Link>
+              <Link className="breadcrumb-item text-dark" to="/">Shop</Link>
               <span className="breadcrumb-item active">Shop List</span>
             </nav>
           </div>
@@ -137,17 +138,17 @@ function Shop() {
                     <div className="btn-group">
                       <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Sorting</button>
                       <div className="dropdown-menu dropdown-menu-right">
-                        <a className="dropdown-item" href="/">Latest</a>
-                        <a className="dropdown-item" href="/">Popularity</a>
-                        <a className="dropdown-item" href="/">Best Rating</a>
+                        <Link className="dropdown-item" to="/">Latest</Link>
+                        <Link className="dropdown-item" to="/">Popularity</Link>
+                        <Link className="dropdown-item" to="/">Best Rating</Link>
                       </div>
                     </div>
                     <div className="btn-group ml-2">
                       <button type="button" className="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Showing</button>
                       <div className="dropdown-menu dropdown-menu-right">
-                        <a className="dropdown-item" href="/">10</a>
-                        <a className="dropdown-item" href="/">20</a>
-                        <a className="dropdown-item" href="/">30</a>
+                        <Link className="dropdown-item" to="/">10</Link>
+                        <Link className="dropdown-item" to="/">20</Link>
+                        <Link className="dropdown-item" to="/">30</Link>
                       </div>
                     </div>
                   </div>
@@ -158,14 +159,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-1.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -185,14 +186,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-2.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -212,14 +213,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-3.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -239,14 +240,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-4.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -266,14 +267,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-5.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -293,14 +294,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-6.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -320,14 +321,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-7.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -347,14 +348,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-8.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -374,14 +375,14 @@ function Shop() {
                   <div className="product-img position-relative overflow-hidden">
                     <img className="img-fluid w-100" src="img/product-9.jpg" alt="" />
                     <div className="product-action">
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-shopping-cart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="far fa-heart"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-sync-alt"></i></a>
-                      <a className="btn btn-outline-dark btn-square" href="/"><i className="fa fa-search"></i></a>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-shopping-cart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="far fa-heart"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-sync-alt"></i></Link>
+                      <Link className="btn btn-outline-dark btn-square" to="/"><i className="fa fa-search"></i></Link>
                     </div>
                   </div>
                   <div className="text-center py-4">
-                    <a className="h6 text-decoration-none text-truncate" href="/">Product Name Goes Here</a>
+                    <Link className="h6 text-decoration-none text-truncate" to="/">Product Name Goes Here</Link>
                     <div className="d-flex align-items-center justify-content-center mt-2">
                       <h5>$123.00</h5><h6 className="text-muted ml-2"><del>$123.00</del></h6>
                     </div>
@@ -399,11 +400,11 @@ function Shop() {
               <div className="col-12">
                 <nav>
                   <ul className="pagination justify-content-center">
-                    <li className="page-item disabled"><a className="page-link" href="/">Previous</a></li>
-                    <li className="page-item active"><a className="page-link" href="/">1</a></li>
-                    <li className="page-item"><a className="page-link" href="/">2</a></li>
-                    <li className="page-item"><a className="page-link" href="/">3</a></li>
-                    <li className="page-item"><a className="page-link" href="/">Next</a></li>
+                    <li className="page-item disabled"><Link className="page-link" to="/">Previous</Link></li>
+                    <li className="page-item active"><Link className="page-link" to="/">1</Link></li>
+                    <li className="page-item"><Link className="page-link" to="/">2</Link></li>
+                    <li className="page-item"><Link className="page-link" to="/">3</Link></li>
+                    <li className="page-item"><Link className="page-link" to="/">Next</Link></li>
                   </ul>
                 </nav>
               </div>
